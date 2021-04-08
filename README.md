@@ -1,10 +1,5 @@
-## 课程学习笔记以及重点知识讲解：https://blog.csdn.net/brad_pitt7
+SpringBoot+Maven+Mybatis+Redis+RabbitMQ 
 
-
-
-## 基于 SpringBoot+Maven+Mybatis+Redis+RabbitMQ 高并发商城秒杀系统
-## 开发工具 
-IntelliJ IDEA 2017.3.1 x64
 ## 开发环境				
 
 | JDK |Maven | Mysql |SpringBoot | redis |RabbitMQ|
@@ -15,7 +10,7 @@ IntelliJ IDEA 2017.3.1 x64
 
 ## 使用说明
 
-1. 下载代码 git clone https://github.com/pitt1997/Seckill 将项目下载到IDEA里面
+1. 下载代码 git clone将项目下载到IDEA里面
 2. 运行sql文件夹下的sql文件
 3. 到src/main/resources下的application.properties下修改你的数据库链接用户名与密码
 4. 安装redis、mysql、rabbitmq、maven等环境
@@ -25,9 +20,8 @@ IntelliJ IDEA 2017.3.1 x64
 8. 商品秒杀列表地址：http://localhost:8080/goods/to_list
 
 ## 其它说明
-1. 数据库共有一千个用户左右（手机号：15200000000~15200000997 密码为：123456），为压测准备的。（使用 com.ljs.miaosha.util.UserUtil.java该类生成的，生成token做压测的方法也是在此类里面）
-
-2. 邮箱只实现了前端格式验证，只需输入一个正确的邮箱格式即可（例如：yys@qq.com）
+1. 数据库共有一千个用户左右（手机号：15200000000~15200000997 密码为：123456），为压测准备的。
+2. 邮箱只实现了前端格式验证，只需输入一个正确的邮箱格式即可（例如：xxx@qq.com）
 
 ## 项目描述
 1. 使用分布式Seesion，让多台服务器可以响应。
@@ -35,4 +29,3 @@ IntelliJ IDEA 2017.3.1 x64
 3. 使用页面静态化，缓存页面至浏览器，前后端分离降低服务器压力。
 4. 使用消息队列完成异步下单，提升用户体验，削峰和降流。
 5. 安全性优化：双重md5密码校验，秒杀接口地址的隐藏，接口限流防刷，数学公式验证码。
-
