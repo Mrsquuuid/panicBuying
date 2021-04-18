@@ -1,6 +1,6 @@
 SpringBoot+Maven+Mybatis+Redis+RabbitMQ 
 
-## 开发环境				
+## development environment				
 
 | JDK |Maven | Mysql |SpringBoot | redis |RabbitMQ|
 |--|--|--|--|--|--|
@@ -8,24 +8,39 @@ SpringBoot+Maven+Mybatis+Redis+RabbitMQ
 
 
 
-## 使用说明
+## instructions
 
-1. 下载代码 git clone将项目下载到IDEA里面
-2. 运行sql文件夹下的sql文件
-3. 到src/main/resources下的application.properties下修改你的数据库链接用户名与密码
-4. 安装redis、mysql、rabbitmq、maven等环境
-5. 启动前，检查配置 application.properties 中相关redis、mysql、rabbitmq地址
-6. 在数据库秒杀商品表里面设置合理的秒杀开始时间与结束时间
-7. 登录地址：http://localhost:8080/login/to_login
-8. 商品秒杀列表地址：http://localhost:8080/goods/to_list
 
-## 其它说明
-1. 数据库共有一千个用户左右（手机号：15200000000~15200000997 密码为：123456），为压测准备的。
-2. 邮箱只实现了前端格式验证，只需输入一个正确的邮箱格式即可（例如：xxx@qq.com）
+1. Download code by git clone to idea
 
-## 项目描述
-1. 使用分布式Seesion，让多台服务器可以响应。
-2. 使用redis做缓存提高访问速度和并发量，减少数据库压力。
-3. 使用页面静态化，缓存页面至浏览器，前后端分离降低服务器压力。
-4. 使用消息队列完成异步下单，提升用户体验，削峰和降流。
-5. 安全性优化：双重md5密码校验，秒杀接口地址的隐藏，接口限流防刷，数学公式验证码。
+2. Run the SQL file in the SQL folder
+
+3. Go to Src / main / resources application.properties Modify your database link user name and password
+
+4. Install redis, mysql, rabbitmq, Maven and other environments
+
+5. Check the configuration before starting application.properties Address of redis, MySQL and rabbitmq in
+
+6. Set reasonable start time and end time in the database seckill commodity table
+
+7. Login address: http://localhost :8080/login/to_ login
+
+8. Commodity second kill list address: http://localhost :8080/goods/to_ list
+
+##Other instructions
+
+1. There are about 1000 users in the database (mobile phone number: 15200000000 ~ 15200000997, password: 123456), which are prepared for pressure measurement.
+
+2. The mailbox only implements the front-end format verification, and only needs to input a correct mailbox format (for example: xxx@qq.com ）
+
+##Project description
+
+1. Use distributed seesion to enable multiple servers to respond.
+
+2. Use redis as cache to improve access speed and concurrency and reduce database pressure.
+
+3. Use page static, cache page to browser, separate front and back end, reduce server pressure.
+
+4. Use message queue to complete asynchronous order, improve user experience, reduce peak and flow.
+
+5. Security optimization: Double MD5 password verification, seckill interface address hiding, interface current limiting and anti brushing, mathematical formula verification code.
